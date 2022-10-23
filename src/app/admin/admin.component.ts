@@ -15,22 +15,10 @@ export class AdminComponent implements OnInit {
   constructor(private router:Router, private http:HttpClient, private formBuilder: FormBuilder) { }
 
     ngOnInit(): void {
-      // let response = this.http.get("http://localhost:9080/api/get");
-      // response.subscribe((data)=>console.log(data));
       this.loginForm = this.formBuilder.group({
         email:[''],
         password:['']
       })
-  
-      // this.myForm = new FormGroup({
-      //   "email" : new FormControl("", [Validators.required, Validators.email]),
-      //   "password" : new FormControl("", [Validators.required, Validators.maxLength(12),  Validators.minLength(8)]),
-      // })
-
-      // this.myForm = this.formBuilder.group({
-      //   email:['',Validators.required],
-      //   password:['',Validators.required]
-      // })
 
   }
 
