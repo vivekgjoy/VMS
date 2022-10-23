@@ -1,3 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign Up</h1>
+          <h6>Please Register yourself !!</h6>
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">First name</label>
+            <input formControlName="firstname" type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter First name...">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Last name</label>
+            <input formControlName="lastname" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Last name...">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Email address</label>
+            <input formControlName="email" type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter email...">
+            <div id="emailHelp" class="form-text">We never share your email with anyone else...!!</div>
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter Password...">
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <a style="color: white; margin-top: 10px;" routerLink="/admin">New user? Click to signup !!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <h1>Hi vivek</h1>
+
 <form>
     <div class="form-row">
       <div class="form-group col-md-6">
@@ -43,4 +79,4 @@
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
+  </form> -->

@@ -1,0 +1,65 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <h1>Admin</h1>
+            <h6>Please Enter your Email & Password !!</h6>
+          </div>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Email address</label>
+              <input formControlName="email" type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter email...">
+              <div id="emailHelp" class="form-text">We never share your email with anyone else...!!</div>
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Password</label>
+              <input formControlName="password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter Password...">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <a style="color: white; margin-top: 10px;" routerLink="/register">New User? Click to Sign Up!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- <div class="wrapper">
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFMmiCHEAgeqsQAoItyRV4ZTQE3um3qD_2H5tNOCBQ8QlNWyc&s"  
+         alt="admin">
+    </div>
+    <div class="text-center mt-4 name">
+        Admin
+      </div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input formControlName="email" type="text" name="userName" id="userName" placeholder="Email">
+        </div>
+        <br>
+            <span Class="text-danger" *ngIf="myForm.controls['email'].dirty && myForm.hasError('required','email')" >*Email Id is Required...</span>
+            <br>
+            <span Class="text-danger" *ngIf="!myForm.valid">*Enter valid Email Id...</span>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input formControlName="password" type="password" name="password" id="pwd" placeholder="Password">
+        </div>
+        <br>
+            <span Class="text-danger" *ngIf="myForm.controls['password'].dirty && myForm.hasError('required','password')" >*Password is Required...</span>
+        <button [disabled]="myForm.invalid" class="btn mt-3" (click)="gotoDashboard()" >Login</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+    </div>
+</div> -->
+
+
+
+
+
+
